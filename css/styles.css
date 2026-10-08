@@ -1,6 +1,5 @@
-/* ============ DOCTORS ============ */
 .doctors { padding: var(--sp-section) 0; background: var(--cream); }
-.doctors__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; justify-content: center; max-width: 1100px; margin: 0 auto; }
+.doctors__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; justify-content: center; }
 .doctor { display: block; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 30px 26px; text-align: center; box-shadow: var(--shadow); transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
 .doctor:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: #cadcef; }
 .doctor__more { display: inline-block; margin-top: 14px; color: var(--gold); font-weight: 600; font-size: .9rem; }
@@ -14,7 +13,7 @@
 .doctor__desc { color: var(--muted); font-size: .92rem; }
 
 @media (max-width: 1024px) {
-  .doctors__grid { grid-template-columns: repeat(2, minmax(0, 380px)); gap: 28px; justify-content: center; }
+  .doctors__grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 640px) {
